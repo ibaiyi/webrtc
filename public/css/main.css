@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+}
+
+video {
+    max-width: 100%;
+    width: 500px;
+    /* filter:     saturate(80%); */
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotateY(180deg);
+}
