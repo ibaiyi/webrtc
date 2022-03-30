@@ -13,7 +13,7 @@ async function bootstrap() {
     cert: fs.readFileSync('./public/turn_server_cert.pem'),
   };
   const app = await NestFactory.create<NestExpressApplication>(
-    AppModule, { httpsOptions}
+    AppModule
   );
 
   const logger: Logger = new Logger(bootstrap.name);
