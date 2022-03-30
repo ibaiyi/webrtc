@@ -1,27 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-
-    <title>Realtime communication with WebRTC</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="css/main.css" />
-
+    <script src="./js/socketio441.js"></script>
+    <script src="./js/peerjs131.js"></script>
 </head>
 
 <body>
-    <h1>Realtime communication with WebRTC</h1>
-
-    <video id="localVideo" autoplay playsinline></video>
-    <video id="remoteVideo" autoplay playsinline></video>
-    <div>
-        <button id="startButton">Start</button>
-        <button id="callButton">Call</button>
-        <button id="hangupButton">Hang Up</button>
+    <div class="container mx-auto">
+        <video id="localVideo" autoplay playsinline></video>
+        <video id="remoteVideo" autoplay playsinline></video>
     </div>
 
-    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-    <script src="js/main.js"></script>
+    <div class="container mx-auto px-4">
+        <button type="button" id="btnCheckin" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">挂号</button>
+        <button type="button" id="btnLeave" class="text-white bg-gradient-to-r from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">退出</button>
+    </div>
+
+
+    <!-- <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script> -->
+    <script src="js/index.js"></script>
 
 </body>
 
